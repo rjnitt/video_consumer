@@ -1,0 +1,174 @@
+--> Creating a Node.js Project:
+
+# Create a new directory for your project
+mkdir my-js-app
+cd my-js-app
+npm init -y
+npm install express
+
+node src/index.js
+
+-> npm start, in package.json
+("start": "node src/index.js")
+
+## creating a react project
+-> npx create-react-app project1
+
+## create a typescript project
+npm init -y
+npm install typescript
+npx tsc --init
+
+-> npm start, in package.json
+("start": "node dist/index.js")
+node dist/index.js
+
+## install library in node
+npm i ws
+## and types for all function popup
+npm i @types/ws
+
+
+
+########### FOR FRONTEND
+# Create a new directory for your project
+mkdir my-express-app
+cd my-express-app
+
+# Initialize a new Node.js project
+npm init -y
+
+# Install Express.js
+npm install express
+
+
+
+
+When to Use Vite?
+Vite is an excellent choice when you need:
+
+Fast Development: Instant server start and fast HMR make it ideal for development.
+Modern JavaScript Features: Leverage ES modules and other modern JavaScript features.
+Optimized Production Build: Efficient and optimized build output for production.
+Framework Support: Works seamlessly with Vue, React, Preact, Svelte, and other frameworks.
+
+npm create vite@latest
+
+npm create vite@latest my-vite-app --template react
+npm i react-router-dom
+
+Start the development server:
+npm run dev
+
+Build the project for production:
+npm run build
+
+Preview the production build:
+npm run preview
+
+
+
+###### CSS
+https://tailwindcss.com/docs/installation
+
+
+######### FOR DATABASE:
+prisma
+
+############ AIVEN / VM
+
+###### validation
+zod library
+
+https://github.com/hkirat/react-boilerplate
+
+
+#####
+https://reactrouter.com/en/main/router-components/browser-router
+
+
+
+
+
+::::::::::::DOCKER COMMAND::::::::::::
+1. docker run: Create and start a new container.
+docker run -it ubuntu bash
+
+2. docker ps: List running containers.
+docker ps
+docker ps -a (all container )
+
+3. docker images: List available images.
+docker images
+## delte docker image
+docker rmi <imageName>
+
+4. docker pull: Pull an image from Docker Hub.
+docker pull alpine:latest
+
+5. docker exec: Execute a command in a running container.
+docker exec -it my_container ls /app
+
+6.docker build: Build an image from a Dockerfile.
+docker build -t my_image .
+
+7.docker stop: Stop a running container.
+docker stop my_container
+
+8.docker rm: Remove a container.
+ docker rm my_container
+
+docker run  --privileged -d --restart always --name android-simulator -p 443:8080 -v /home/admin/:/app/certs docker-adobe-campaignperf-dev.dr-uw2.adobeitc.com/push-simulator:0.1.2
+
+https://falconios-simulatorstg40552-mkt-qa1-1.qa.campaign.adobe.com/ping
+
+
+1. Alpine
+Base Image: alpine
+Common WORKDIR: /app
+Alpine is a minimal Docker image, and /app is a common choice for placing your application files.
+
+2. Debian/Ubuntu
+Base Image: debian, ubuntu
+Common WORKDIR: /app or /usr/src/app
+These images follow a similar directory structure to most Linux distributions, and /app or /usr/src/app are conventional choices for application code.
+
+3. Node.js
+Base Image: node
+Common WORKDIR: /usr/src/app
+The official Node.js images typically use /usr/src/app as the working directory.
+
+4. Python
+Base Image: python
+Common WORKDIR: /usr/src/app
+Similar to Node.js, the Python image uses /usr/src/app by convention.
+
+5. Go
+Base Image: golang
+Common WORKDIR: /go/src/app
+For Go projects, the convention is to use /go/src/app as the working directory.
+
+6. Java (OpenJDK)
+Base Image: openjdk
+Common WORKDIR: /app
+For Java applications, /app is a common choice for the working directory.
+
+7. Ruby
+Base Image: ruby
+Common WORKDIR: /usr/src/app
+The Ruby image typically uses /usr/src/app.
+
+8. PHP
+Base Image: php
+Common WORKDIR: /var/www/html
+For PHP applications, especially those using web servers, /var/www/html is a conventional directory.
+
+9. Nginx
+Base Image: nginx
+Common WORKDIR: /usr/share/nginx/html
+Nginx serves files from /usr/share/nginx/html by default.
+
+10. MySQL
+Base Image: mysql
+Common WORKDIR: /var/lib/mysql
+MySQL stores its data in /var/lib/mysql.
